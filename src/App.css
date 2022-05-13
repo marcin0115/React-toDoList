@@ -1,38 +1,70 @@
+body {
+  /* background-image: url('img/Photo\ by\ pexels.com.pl.jpg'); 
+  background-position: center;
+  background-size: cover;
+  height: 100vh; */
+  background-color: rgb(168, 166, 15);
+}
+
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.activeTasks span {
+  margin-right: 10px;
+}
+.activeTasks button {
+  background-color: rgb(43, 42, 42);
+  color: rgb(216, 212, 212);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.doneTasks span {
+  margin-right: 10px;
+}
+.doneTasks button {
+  background-color: rgb(43, 42, 42);
+  color: rgb(216, 212, 212);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
+
+.TaskList .border {
+  border: solid 1px rgb(39, 38, 38);
 }
 
-.App-link {
-  color: #61dafb;
+
+.Form input {
+margin: 10px;
+padding: 5px 10px;
+font-size: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+.Form input[type='checkbox'] {
+width: 17px;
+height: 17px;
+}
+
+.Form {
+  font-size: 20px;
+}
+
+.Form button {
+  padding: 3px 10px;
+  text-transform: uppercase;
+  margin: 20px;
+  font-size: 20px;
+  background-color: rgb(211, 25, 102);
+  border: 2px solid rgb(41, 38, 38);
+  border-radius: 22%;
+  cursor: pointer;
+  transition: .3s linear;
+} 
+.Form button:hover {
+  font-size: 21px;
+}
+
+@media (max-width: 320px) {
+  .Form input {
+      margin: 10px 0;
   }
 }
